@@ -1,0 +1,95 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+body
+{
+    background-color: rgba(23, 23, 23, 0.341);
+    background-image: url(https://images.unsplash.com/photo-1541746951956-4f27df54f02b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper
+{
+text-align: center;
+max-width:800px;
+min-width: 600px;
+background-color: white;
+border-radius: 25px;
+margin: 0 auto;
+padding: 20px 0;
+
+}
+
+button{
+    background-color: #ec6e4c;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 32px;
+    font-weight:600;
+    color: #ec6e4c;
+}
+
+h2, h3
+{
+    /* display: inline; */
+    /* text-align: right; */
+    color: rgba(0, 0, 0, 0.59);
+    margin-bottom: 1rem;
+}
+
+.coloration{
+    max-width: 400px;
+    display: none;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+
+
+#temperature 
+{
+display: block;
+position: relative;
+font-size: 73px;
+color: #ec6e4c;
+}
+
+#temperature::after{
+    content: "°";
+    position: absolute;
+    top: -9px;
+}
+
+.cold{
+    background-color: #6a656417;
+}
+
+.hot{
+    background-color: #b33b2391;
+}
+
+.hot *{
+    color: white !important;
+}
+
+.cold *{
+    color: #ec6e4c;
+}

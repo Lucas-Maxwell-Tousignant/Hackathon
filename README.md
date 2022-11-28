@@ -1,2 +1,0 @@
-# Hackathon
-hackathon band.js
